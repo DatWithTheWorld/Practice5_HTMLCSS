@@ -1,0 +1,22 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra không nhập chuỗi trống</title>
+</head>
+     <script>
+    function ktten() 
+    { 
+     var str= form1.fname.value; 
+     if(str.length==0) 
+      alert(" Không được để trống, nhập lại"); 
+     else alert("Tên của bạn là: "+ form1.fname.value) ;    
+    } 
+     </script>
+<body>
+<FORM name="form1"> 
+<P> Nhập vào tên : <INPUT TYPE="text" NAME="fname" size=10 > 
+<button type="button" onclick="ktten()">OK</button>
+</body>
+</html>

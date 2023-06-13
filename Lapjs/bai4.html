@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java script</title>
+</head>
+    <script language="javascript">
+    // Hàm cộng hai số
+    function tong(a, b)
+    {
+        return a + b;
+    }
+
+     function hieu(a, b)
+    {
+        return a - b;
+    }
+
+     function tich(a, b)
+    {
+        return a * b;
+    }
+
+     function thuong(a, b)
+    {
+        return a / b;
+    }
+
+    // Lấy thông tin từ người dùng
+    var a = parseInt(prompt("Nhập số a"));
+    var b = parseInt(prompt("Nhập số b"));
+
+    // Tính tổng
+    var tong = tong(a, b); var hieu = hieu(a, b);
+    var tich = tich(a, b);
+    var thuong = thuong(a, b);
+    
+// In ra màn hình
+    document.write("Tổng hai số " + a + " + " + b + " là " + tong);
+    document.write("<BR>") 
+    document.write("Hieu hai số " + a + " - " + b + " là " + hieu);
+    document.write("<br>")
+    document.write("Tich hai số " + a + " * " + b + " là " + tich);
+    document.write("<br>")
+    document.write("Thương hai số " + a + " / " + b + " là " + thuong);
+</script>
+</body>
+</html>

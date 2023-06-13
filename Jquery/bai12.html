@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+#title, #panel {
+padding: 5px;
+font-size: 18px;
+text-align: center,
+background-color: #555;
+color: white;
+border: 1px solid red;
+border-radius: 3px;
+}
+#panel {
+padding: 50px;
+display: none;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery min.js">
+</script>
+<script type="text/javascript">
+});
+$(document).ready(function(){
+$("#title").click(function() {
+$("#panel").slideDown(5000);
+$("button").click(function() {
+$("#panel").stop();});});
+</script>
+<head>
+<body>
+});
+<button>Stop</button><br>
+<br>
+<div id="title"> Click vào đây </div>
+<div id="panel"> Khoa công nghệ thông tin</div>
+</body>
+</html>

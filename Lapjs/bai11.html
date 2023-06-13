@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đây là bài số 11 javascript</title>
+</head>
+
+<body>
+<p>Vui lòng nhập tuổi từ 1 đến 130:</p>
+<input id="num"><button type="button" onclick="checkInput()">OK</button>
+<p id="text"></p>
+<script>
+function checkInput() {
+    var x, text;
+    x = document.getElementById("num").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 130) {
+        alert("Không hợp lệ Bạn phải nhập lại");
+    } else {
+        alert("Hợp lệ, tuổi của bạn là: " + x) ;
+    } 
+}
+</script>
+</body>
+</html> 

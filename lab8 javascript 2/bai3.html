@@ -1,0 +1,27 @@
+<html>
+<head>
+<script language="JavaScript">
+function compute(form)
+{
+if (confirm("Are you sure?")) 
+form.ketqua.value = eval(form.expr.value)
+
+else alert("Please come back again.")
+}
+</script>
+</head>
+<body>
+<form>
+Enter an expression:
+<input type="text" name="expr" size=15>
+<br>
+<br>
+<input type="button" value="Calculate"
+onclick="compute(this.form)">
+<br><br><br>
+Kết quả
+<input type="text" name="ketqua" size=15 >
+<br>
+</form>
+</body>
+</html>

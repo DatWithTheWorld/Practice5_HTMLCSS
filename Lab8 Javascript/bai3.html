@@ -1,0 +1,18 @@
+<html>
+<head>
+<title> Button Events </title>
+<script language="JavaScript">
+function writelt(value)
+{
+myfm.second_text.value=value;
+}
+</script>
+</head>
+<body BGCOLOR="#FFFFFF">
+<form name="myfm">
+<input type="text" name="first_text">
+<input TYPE="button" value="Copy" onClick="writelt(myfm.first_text.value);">
+<input type="text" name="second_text">
+</form>
+</body>
+</html>

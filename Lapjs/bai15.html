@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đây là bài 15 Javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var id = prompt("Mời bạn nhập mã SV:");
+		var str = id.slice(0,4);
+		var str1 = id.slice(4,7);
+		if((str=="20IT")&&(parseInt(str1)>=100&&parseInt(str1)<=999)&& id.length==7) {
+			alert("Đúng quy tắc");
+			document.write("ID: "+id+"<br>");
+		}  else {
+			alert("Sai quy tắc");
+		}
+		var c=prompt("Nhập tên");
+		if (c=="") 
+			alert("Nhập lại");
+		else
+			document.write("Tên: "+c+"<br>");
+		var dc=prompt("Đia chỉ: ");
+		if (c=="") 	alert("Nhập lại");
+		else
+			document.write("Đia chỉ: "+c+"<br>");
+		var sdt=prompt("Nhập sô điện thoại: ");
+		if (sdt.length>=6&&sdt.length<=10) {
+			alert("Đúng quy tắc");
+			document.write("SĐT: "+sdt+"<br>");
+		}
+		else
+			alert("Sai quy tắc");
+	</script>
+
+</body>
+</html>
